@@ -1,0 +1,78 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background:rgba(0, 0, 0, 0.856);
+}
+.cards{
+    padding: 60px;
+}
+.cards .cont{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+}
+
+.img{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background-size: cover;
+    box-sizing: border-box;  
+    overflow: hidden;  
+    background-position: center bottom;
+}
+
+.cards .cont .card{
+    color: white;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    transition: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.3), -4px 0 10px  rgba(0,0,0,0.2), -5px 0 10px  rgba(0,0,0,0.1);
+}
+.cards .cont .fondo{
+    background-size:cover ;
+}
+
+.cards .cont .card a{
+    color: rgb(175, 180, 236);
+    text-decoration: none;
+    font-weight: bold;
+}
+.cards .cont .card a:hover{
+    color: lightgoldenrodyellow;
+}
+
+.cards .card .header{
+    flex:1;
+}
+
+.title{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.cards .cont .card:hover{
+    margin-right: 80px;
+    transform: rotate(3deg) translateY(-15px);
+}
+
+.cards .cont .card .header .date{
+    padding: 10px 0;
+}
+
+.cards .cont .card .header .title{
+    font-size: 28px;
+}
+/*agregar estilos a cada elemento que contenga la clase element*/
+.cards .cont .card[class*="element"]{
+    margin-left: -100px;/*para ponerlas mas juntas*/
+}
+
